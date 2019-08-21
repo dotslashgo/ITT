@@ -1,0 +1,19 @@
+body{
+	background: #ccff66;
+	text-align: center;
+}
+p {
+	color: black;
+	text-align: center;
+}
+table{
+	padding: 20px;
+}
+th{
+	color: #004040;
+	font-family: Arial;
+}
+table, th, td{
+	border: 1px, solid black;
+	align-self: center;
+}
