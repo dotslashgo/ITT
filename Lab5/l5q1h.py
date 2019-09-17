@@ -1,0 +1,7 @@
+a=set(input('Enter set a: ').split())
+b=set(input('Enter set b: ').split())
+print('Union: ', a.union(b))
+print('Intersection: ', a.intersection(b))
+print('Is a and b disjoint: ', a.isdisjoint(b))
+print('Is a subset of b: ', a.issubset(b))
+print('Is a superset of b: ', a.issuperset(b))

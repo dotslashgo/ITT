@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L5 Q1</title>
+</head>
+<body>
+	<p id="p1">
+	</p>
+	<script language="javascript">
+		var p = document.getElementById("p1");
+		p.style.textAlign="center";
+		var c=5;
+		function increaseSize(){
+			p.style.color="red";
+			p.innerHTML="TEXT-GROWING";
+			c=c+1;
+			p.style.fontSize=c+"px"
+
+			if(c<50){
+				setTimeout(increaseSize, 100);
+			}else{
+				setTimeout(decreaseSize, 100);
+			}
+		}
+		function decreaseSize(){
+			p.style.color="blue";
+			p.innerHTML="TEXT-SHRINKING";
+			c=c-1;
+			p.style.fontSize=c+"px";
+
+			if (c>5){
+				setTimeout(decreaseSize, 100);
+			}else{
+				setTimeout(increaseSize, 100);
+			}
+		}
+		increaseSize();
+	</script>
+</body>
+</html>

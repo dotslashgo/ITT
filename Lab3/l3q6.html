@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L3 Q6</title>
+</head>
+<body>
+	<table border="1" style="border-collapse: collapse;"
+	cellpadding="10" id="t1" align="center">
+		
+	</table>
+
+	<script type="text/javascript">
+		var table=document.getElementById("t1");
+		var row=table.insertRow(0);
+		var cell1=row.insertCell(0);
+		var cell2=row.insertCell(1);
+		var cell3=row.insertCell(2);
+
+		cell1.innerHTML="Numbers";
+		cell2.innerHTML="Squares";
+		cell3.innerHTML="Cubes";
+
+		for(var i=1; i<=10; i++){
+			var row=table.insertRow(i);
+			var cell1=row.insertCell(0);
+			var cell2=row.insertCell(1);
+			var cell3=row.insertCell(2);
+
+			cell1.innerHTML=i;
+			cell2.innerHTML=i*i;
+			cell3.innerHTML=i*i*i;
+		}
+	</script>
+</body>
+</html>

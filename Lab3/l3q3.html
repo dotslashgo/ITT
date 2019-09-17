@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L3 Q3</title>
+</head>
+<body>
+	<p style="text-align: center;">
+		Area Code: 
+		<input type="text" id="areacode" > 
+		Phone No.: 
+		<input type="text" id="phone" > 
+	</p>
+
+	<script type="text/javascript">
+		var no=window.prompt("Enter the phone no.");
+		var areaCode=no.slice(1, 4);
+		var firstThree=no.slice(5, 8);
+		var phoneNo=no.slice(9, 13);
+
+		document.getElementById("areacode").value=areaCode;
+		document.getElementById("phone").value=firstThree+phoneNo;
+	</script>
+</body>
+</html>

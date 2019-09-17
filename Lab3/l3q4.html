@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L3 Q4</title>
+</head>
+<body>
+	<input type="text" id="str" maxlength="5"><br/>
+	<textarea type="area" id="txt" rows="20" cols="18"></textarea>
+	<button type="button" onclick="generatePermutation()">Generate Permutations</button>
+
+	<script type="text/javascript">
+		var txt=document.getElementById("txt");
+		var y="";
+		
+		function generatePermutation(){
+			var str=document.getElementById("str").value;
+			for(var i=0; i<5; i++){
+				for(var j=0; j<5; j++){
+					for(var k=0; k<5; k++){
+						if(i!=j && j!=k && k!=i){
+							y=y+str.charAt(i)+str.charAt(j)+str.charAt(k)+" ";
+						}
+					}
+				}
+			}
+			txt.innerHTML=y;
+		}
+
+	</script>
+</body>
+</html>

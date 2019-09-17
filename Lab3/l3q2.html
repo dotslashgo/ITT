@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L3 Q2</title>
+</head>
+<body>
+
+	<textarea rows="20" cols=100 id="txt"></textarea>
+
+	<script type="text/javascript">
+		function pigLatinWord(str){
+			var word=str.slice(1);
+			word=word+str.charAt(0)+"ay"
+			return word;
+		}
+		var str=window.prompt('Enter the sentence');
+		var text=document.getElementById("txt");
+
+		var arr=str.split(" ");
+
+		for (var i=0; i<arr.length; i++){
+			var piglatin=pigLatinWord(arr[i]);
+			text.value=text.value+" "+piglatin;
+		}
+	</script>
+</body>
+</html>
