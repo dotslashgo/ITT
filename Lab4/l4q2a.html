@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function leftMostVow(s){
+			var vow=["a", "e", "i", "o", "u"];
+			var ind=s.length;
+			for(var i=0; i<5; i++){
+				if (s.indexOf(vow[i]) != -1){
+					ind=Math.min(ind, s.indexOf(vow[i]));
+				}
+			}
+			return ind
+		}
+		document.write("Index of the left-most vowel is: "+leftMostVow(prompt().toLowerCase()));
+	</script>
+</body>
+</html>

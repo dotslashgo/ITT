@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body><center>
+	<font id="f1" onmouseover="sizeInc(this.id)" onmouseleave="sizeDec(this.id)">
+		Sample text
+	</font>
+
+	<script type="text/javascript">
+		function sizeInc(id){
+			f1=document.getElementById(id);
+			f1.style.fontSize='50px';
+		}
+		function sizeDec(id){
+			f1=document.getElementById(id);
+			f1.style.fontSize='20px';
+		}		
+	</script>
+	</center>
+</body>
+</html>

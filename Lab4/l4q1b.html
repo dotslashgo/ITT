@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center>
+	<table id="t1" border="1" style="border-collapse: collapse; text-align: center;" cellpadding="10">
+	<script type="text/javascript">
+		var n=prompt();
+		var t1=document.getElementById("t1");
+		var row=t1.insertRow(0);
+		var col1=row.insertCell(0);
+		var col2=row.insertCell(1);
+		col1.innerHTML="<b>Numbers</b>";
+		col2.innerHTML="<b>Squares</b>";
+
+		for(var i=1; i<=n; i++){
+			row=t1.insertRow(i);
+			col1=row.insertCell(0);
+			col2=row.insertCell(1);
+			col1.innerHTML=i;
+			col2.innerHTML=i*i;
+		}
+	</script>
+</center>
+</body>
+</html>

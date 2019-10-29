@@ -4,11 +4,3 @@ def transpose(_mat):
 dim=list(map(int, input('Enter the dimensions: ').split()))
 _mat=[[ int(input()) for i in range(dim[0])] for j in range(dim[1])]
 print(transpose(_mat))
-
-
-         
-
-
-             
-                                                          
-                                                        

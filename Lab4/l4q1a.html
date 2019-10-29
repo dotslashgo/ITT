@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var n=prompt();
+		var ser='';
+		function fibo(n){
+			if(n==1 || n==2){
+				return 1;
+			}else{
+				return fibo(n-1)+fibo(n-2)
+			}
+		}
+		document.write("First "+n+" Fibonacci numbers are: </br>");
+		for(var i=1; i<n; i++){
+			document.write(fibo(i));
+			if(i!=n-1){
+				document.write(', ')
+			}
+		}
+	</script>
+</body>
+</html>
